@@ -41,4 +41,4 @@ $j5 = foreach($item in ($d.ParsedHtml.getElementsByTagName("p")| %{$_.innertext|
     ''|select @{n='Category';e={'joke'}}, @{n='text';e={[System.Web.HttpUtility]::HtmlDecode($item)}}
 }
 
-$joke = $j1+$j2+$j3+$j4
+$joke = $j5+$j2+$j3+$j4+$j1
